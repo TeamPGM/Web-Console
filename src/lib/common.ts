@@ -18,7 +18,7 @@ export default class Common {
         if (typeof data === 'string' || typeof data === 'number') {
             dataStr = data.toString()
         }
-        if (dataStr) {
+        if (dataStr != null) {
             localStorage.setItem('pgp-' + name, dataStr)
         }
     }
